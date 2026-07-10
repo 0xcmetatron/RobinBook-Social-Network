@@ -79,16 +79,16 @@ export async function GET() {
     const securitySettings = isAdmin ? await getSecuritySettings() : undefined;
 
     const result: Record<string, any> = {
-      site_name: settings.site_name || 'SolConnect',
-      site_title: settings.site_title || 'SolConnect - Buy. Hold. Earn SOL.',
-      site_description: settings.site_description || 'Join our community of token holders.',
+      site_name: (settings.site_name || 'RobinBook').replace(/RobinBook/ig, 'RobinBook').replace(/Black Social Network/ig, 'RobinBook Social Network'),
+      site_title: (settings.site_title || 'RobinBook - Buy. Hold. Earn SOL.').replace(/RobinBook/ig, 'RobinBook').replace(/Black Social Network/ig, 'RobinBook Social Network'),
+      site_description: (settings.site_description || 'Join our community of token holders.').replace(/RobinBook/ig, 'RobinBook').replace(/Black Social Network/ig, 'RobinBook Social Network'),
       site_slogan: settings.site_slogan || 'Connect with holders and earn SOL rewards',
       logo_url: settings.logo_url || '',
       logo_size: settings.logo_size || '80',
       favicon_url: settings.favicon_url || '',
       contract_address: settings.contract_address || '',
       twitter_url: settings.twitter_url || '',
-      copyright_text: settings.copyright_text || '',
+      copyright_text: (settings.copyright_text || '').replace(/RobinBook/ig, 'RobinBook').replace(/Black Social Network/ig, 'RobinBook Social Network'),
       dev_wallet: settings.dev_wallet || '',
       theme_json: settings.theme_json || '',
     };
@@ -103,8 +103,8 @@ export async function GET() {
     console.error('[v0] Get settings error:', error);
     // Return sensible defaults so the app still works
     return NextResponse.json({
-      site_name: 'SolConnect',
-      site_title: 'SolConnect - Buy. Hold. Earn SOL.',
+      site_name: 'RobinBook',
+      site_title: 'RobinBook - Buy. Hold. Earn SOL.',
       site_description: 'Join our community of token holders.',
       site_slogan: 'Connect with holders and earn SOL rewards',
       logo_url: '',

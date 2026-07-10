@@ -90,7 +90,7 @@ export function Header({ user: propUser }: { user?: User | null }) {
         <div className="flex items-center gap-4">
           <button onClick={() => router.push('/feed')} className="flex items-center gap-2 text-lg font-bold text-[#e8e8ed]">
             <span className="text-[#4A7AFF]">●</span>
-            <span className="hidden sm:inline">BlackSocial</span>
+            <span className="hidden sm:inline">RobinBook</span>
           </button>
           <div className="hidden md:flex items-center gap-1 ml-4">
             <button onClick={() => router.push('/feed')} className={`px-3 py-1.5 text-sm font-medium rounded-lg transition-all ${pathname === '/feed' ? 'text-[#4A7AFF] bg-[#4A7AFF]/10' : 'text-[#e8e8ed]/60 hover:text-[#e8e8ed] hover:bg-[#1e1f2e]'}`}>Feed</button>

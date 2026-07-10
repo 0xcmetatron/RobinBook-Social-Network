@@ -200,6 +200,13 @@ export async function GET() {
       FOREIGN KEY (receiver_id) REFERENCES users(id) ON DELETE CASCADE
     )`);
 
+    // Enforce RobinBook branding over old names
+    try {
+      await query(`UPDATE site_settings SET setting_value = 'RobinBook' WHERE setting_key = 'site_name' AND setting_value LIKE '%RobinBook%'`);
+      await query(`UPDATE site_settings SET setting_value = REPLACE(setting_value, 'RobinBook', 'RobinBook')`);
+      await query(`UPDATE site_settings SET setting_value = REPLACE(setting_value, 'Black Social Network', 'RobinBook Social Network')`);
+    } catch(e) { console.error('Migration error:', e) }
+
     // Create admin user if not exists
     const existingAdmin = await query<any[]>(
       'SELECT id FROM users WHERE email = ?',
@@ -216,15 +223,15 @@ export async function GET() {
 
     // Insert default site settings (only if they don't exist)
     const defaultSettings: Record<string, string> = {
-      site_name: 'SolConnect',
-      site_title: 'SolConnect - Buy. Hold. Earn SOL.',
+      site_name: 'RobinBook',
+      site_title: 'RobinBook - Buy. Hold. Earn SOL.',
       site_slogan: 'Connect with holders and earn SOL rewards every 10 seconds',
       site_description: 'Join our community of token holders. Share, connect, and earn SOL rewards automatically every 10 seconds just by holding our token.',
       logo_url: '',
       contract_address: 'YOUR_TOKEN_MINT_ADDRESS_HERE',
       twitter_url: 'https://twitter.com/yourproject',
       favicon_url: '',
-      copyright_text: '2024 SolConnect. All rights reserved.',
+      copyright_text: '2024 RobinBook. All rights reserved.',
     };
 
     for (const [key, value] of Object.entries(defaultSettings)) {

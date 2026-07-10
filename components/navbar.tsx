@@ -109,7 +109,7 @@ export function Navbar() {
             {settings?.logo_url ? (
               <img src={settings.logo_url} alt={settings.site_name} className="h-8 w-auto cursor-pointer" onClick={() => router.push('/feed')} />
             ) : (
-              <h1 className="cursor-pointer text-xl font-bold text-[#4A7AFF]" onClick={() => router.push('/feed')}>{settings?.site_name || 'BlackSocial'}</h1>
+              <h1 className="cursor-pointer text-xl font-bold text-[#4A7AFF]" onClick={() => router.push('/feed')}>{settings?.site_name || 'RobinBook'}</h1>
             )}
 
             {settings?.contract_address && (

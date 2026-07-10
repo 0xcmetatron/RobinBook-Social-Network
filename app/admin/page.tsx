@@ -419,11 +419,11 @@ export default function AdminPanel() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-1.5">
                   <label className="text-xs font-medium text-[#e8e8ed]/70">Site Name</label>
-                  <input value={settings?.site_name || ''} onChange={(e) => setSettings({ ...settings, site_name: e.target.value })} placeholder="BlackSocial" className="h-10 w-full rounded-xl bg-[#1e1f2e] border border-[#1e1f2e] text-[#e8e8ed] text-sm px-4 outline-none focus:ring-1 focus:ring-[#4A7AFF] transition-all" />
+                  <input value={settings?.site_name || ''} onChange={(e) => setSettings({ ...settings, site_name: e.target.value })} placeholder="RobinBook" className="h-10 w-full rounded-xl bg-[#1e1f2e] border border-[#1e1f2e] text-[#e8e8ed] text-sm px-4 outline-none focus:ring-1 focus:ring-[#4A7AFF] transition-all" />
                 </div>
                 <div className="space-y-1.5">
                   <label className="text-xs font-medium text-[#e8e8ed]/70">Site Title</label>
-                  <input value={settings?.site_title || ''} onChange={(e) => setSettings({ ...settings, site_title: e.target.value })} placeholder="BlackSocial Network" className="h-10 w-full rounded-xl bg-[#1e1f2e] border border-[#1e1f2e] text-[#e8e8ed] text-sm px-4 outline-none focus:ring-1 focus:ring-[#4A7AFF] transition-all" />
+                  <input value={settings?.site_title || ''} onChange={(e) => setSettings({ ...settings, site_title: e.target.value })} placeholder="RobinBook Network" className="h-10 w-full rounded-xl bg-[#1e1f2e] border border-[#1e1f2e] text-[#e8e8ed] text-sm px-4 outline-none focus:ring-1 focus:ring-[#4A7AFF] transition-all" />
                 </div>
                 <div className="space-y-1.5">
                   <label className="text-xs font-medium text-[#e8e8ed]/70">Logo URL</label>
@@ -487,7 +487,7 @@ export default function AdminPanel() {
 
               <div className="space-y-1.5">
                 <label className="text-xs font-medium text-[#e8e8ed]/70">Copyright Text</label>
-                <input value={settings?.copyright_text || ''} onChange={(e) => setSettings({ ...settings, copyright_text: e.target.value })} placeholder="\u00A9 2024 BlackSocial. All rights reserved." className="h-10 w-full rounded-xl bg-[#1e1f2e] border border-[#1e1f2e] text-[#e8e8ed] text-sm px-4 outline-none focus:ring-1 focus:ring-[#4A7AFF] transition-all" />
+                <input value={settings?.copyright_text || ''} onChange={(e) => setSettings({ ...settings, copyright_text: e.target.value })} placeholder="\u00A9 2024 RobinBook. All rights reserved." className="h-10 w-full rounded-xl bg-[#1e1f2e] border border-[#1e1f2e] text-[#e8e8ed] text-sm px-4 outline-none focus:ring-1 focus:ring-[#4A7AFF] transition-all" />
               </div>
             </div>
 
@@ -633,7 +633,7 @@ export default function AdminPanel() {
                 <div className="rounded-xl bg-[#1e1f2e] p-4 space-y-3">
                   <p className="text-xs font-medium text-[#e8e8ed]/50">Login Preview</p>
                   <div className="rounded-xl p-6 border flex flex-col items-center justify-center min-h-[300px]" style={{ backgroundColor: theme?.background_color || '#0A0B10', borderColor: theme?.border_color || '#1e1f2e' }}>
-                    <h1 className="text-2xl font-bold mb-2" style={{ color: theme?.primary_color || '#4A7AFF', fontFamily: getCustomFont() }}>{settings?.site_name || 'BlackSocial'}</h1>
+                    <h1 className="text-2xl font-bold mb-2" style={{ color: theme?.primary_color || '#4A7AFF', fontFamily: getCustomFont() }}>{settings?.site_name || 'RobinBook'}</h1>
                     <p className="text-xs mb-6 text-center" style={{ color: theme?.text_color || '#e8e8ed', opacity: 0.7 }}>{settings?.site_description || 'Join our community of token holders.'}</p>
                     
                     <div className="w-full max-w-xs space-y-3">
