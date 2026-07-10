@@ -5,30 +5,30 @@ import { GlobalWidgets } from '@/components/global-widgets'
 import { ThemeProvider } from '@/components/theme-provider'
 
 export const metadata: Metadata = {
-  title: 'Black Social Network — Buy. Hold. Earn SOL',
+  title: 'RobinBook — The Social Network for Robinhood Traders',
   description:
-    'Black Social Network — Buy. Hold. Earn SOL. Join our community of token holders. Share, connect, and earn SOL rewards automatically every 10 seconds just by holding our token.',
+    'RobinBook — The social network for the Robinhood ecosystem. Create communities, chat live, and connect with traders who trade what you trade.',
 
-  metadataBase: new URL('https://blacksocialnetwork.fun'),
+  metadataBase: new URL('https://robinbook.fun'),
 
   icons: {
-    icon: 'https://i.ibb.co/4gfpFXS6/bx.png',
-    shortcut: 'https://i.ibb.co/4gfpFXS6/bx.png',
-    apple: 'https://i.ibb.co/4gfpFXS6/bx.png',
+    icon: 'https://i.ibb.co/JRJChvkT/robinbook.png',
+    shortcut: 'https://i.ibb.co/JRJChvkT/robinbook.png',
+    apple: 'https://i.ibb.co/JRJChvkT/robinbook.png',
   },
 
   openGraph: {
-    title: 'Black Social Network — Buy. Hold. Earn SOL',
+    title: 'RobinBook — The Social Network for Robinhood Traders',
     description:
-      'Join our community. Share, connect, and earn SOL rewards automatically every 10 seconds.',
-    url: 'https://blacksocialnetwork.fun',
-    siteName: 'Black Social Network',
+      'The social network for the Robinhood ecosystem. Create communities, chat live, and connect with traders who trade what you trade.',
+    url: 'https://robinbook.fun',
+    siteName: 'RobinBook',
     images: [
       {
-        url: 'https://i.ibb.co/4gfpFXS6/bx.png',
+        url: 'https://i.ibb.co/JRJChvkT/robinbook.png',
         width: 1200,
         height: 630,
-        alt: 'Black Social Network Preview',
+        alt: 'RobinBook Preview',
       },
     ],
     locale: 'en_US',
@@ -37,10 +37,10 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Black Social Network — Buy. Hold. Earn SOL',
+    title: 'RobinBook — The Social Network for Robinhood Traders',
     description:
-      'Share, connect, and earn SOL rewards automatically every 10 seconds just by holding our token.',
-    images: ['https://i.ibb.co/4gfpFXS6/bx.png'],
+      'The social network for the Robinhood ecosystem. Create communities, chat live, and connect with traders who trade what you trade.',
+    images: ['https://i.ibb.co/JRJChvkT/robinbook.png'],
   },
 }
 
