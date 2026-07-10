@@ -23,10 +23,10 @@ interface SiteSettings {
 }
 
 const DEFAULT_SETTINGS: SiteSettings = {
-  site_name: 'Black Social Network',
-  site_title: 'Black Social Network — Buy. Hold. Earn SOL.',
-  site_description: 'The First Black Social Network. Share, connect, and earn SOL rewards automatically every 10 seconds just by holding our token.',
-  logo_url: 'https://i.ibb.co/4gfpFXS6/bx.png',
+  site_name: 'RobinBook Social Network',
+  site_title: 'RobinBook Social Network — Buy. Hold. Earn SOL.',
+  site_description: 'The First RobinBook Social Network. Share, connect, and earn SOL rewards automatically every 10 seconds just by holding our token.',
+  logo_url: 'https://i.ibb.co/JRJChvkT/robinbook.png',
   logo_size: '280',
   contract_address: '',
   twitter_url: '',

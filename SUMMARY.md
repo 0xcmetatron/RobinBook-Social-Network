@@ -6,13 +6,13 @@ Modernize every page of the social network (feed, profile, community, chat, admi
 - Previous deployment of `unstable-social-network` was rejected ("eso no era el que realizaste").
 - Live domain: `blacksocialnetwork.fun`.
 - Production DB: `82.197.82.133` / `u533650113_black` / `Juan159159@` (already configured in `lib/db.ts`).
-- Vercel project: `testtttts-projects-0f3bffb2/niggasocialnetwork`.
-- GitHub repo: `0xcmetatron/nigga-social-network` (private, cloned at `C:\Users\PC\Documents\GitHub\nigga-social-network`).
-- Correct working directory is `C:\Users\PC\Documents\GitHub\nigga-social-network`, NOT `unstable-social-network`.
+- Vercel project: `testtttts-projects-0f3bffb2/robinbook-social-network`.
+- GitHub repo: `0xcmetatron/RobinBook-Social-Network` (private, cloned at `C:\Users\PC\Documents\GitHub\RobinBook-Social-Network`).
+- Correct working directory is `C:\Users\PC\Documents\GitHub\RobinBook-Social-Network`, NOT `unstable-social-network`.
 
 ## Progress
 ### Done
-- Redeployed `nigga-social-network` (correct repo) back to Vercel prod after mistakenly deploying `unstable-social-network`.
+- Redeployed `RobinBook-Social-Network` (correct repo) back to Vercel prod after mistakenly deploying `unstable-social-network`.
 - Modernized `app/feed/page.tsx`: changed `DEFAULT_THEME` to dark colors, removed server theme override, added gradient to Post button and comment Post button.
 - Modernized `app/profile/page.tsx`: updated `DEFAULT_THEME` to dark, removed `placeholder_color`, removed server theme override, added gradient to Save Changes button.
 - Modernized `app/profile/[id]/page.tsx`: updated `DEFAULT_THEME` to dark, removed server theme override, added gradient to Back to Feed and comment Post buttons.
@@ -44,13 +44,13 @@ Modernize every page of the social network (feed, profile, community, chat, admi
 - The build compiles successfully locally with `npm run build` (not pnpm). Vercel uses pnpm on remote.
 
 ## Relevant Files
-- `C:\Users\PC\Documents\GitHub\nigga-social-network\app\page.tsx`: new modern login page (dark, gradient buttons, eye toggle, icons).
-- `C:\Users\PC\Documents\GitHub\nigga-social-network\app\layout.tsx`: metadata for "Bull Social Network" with gun logo.
-- `C:\Users\PC\Documents\GitHub\nigga-social-network\lib\db.ts`: points to `u533650113_black` / `Juan159159@`.
-- `C:\Users\PC\Documents\GitHub\nigga-social-network\app\feed\page.tsx`: modernized (dark theme).
-- `C:\Users\PC\Documents\GitHub\nigga-social-network\app\profile\page.tsx`: modernized (dark theme).
-- `C:\Users\PC\Documents\GitHub\nigga-social-network\app\profile\[id]\page.tsx`: modernized (dark theme).
-- `C:\Users\PC\Documents\GitHub\nigga-social-network\app\community\page.tsx`: modernized (dark theme).
-- `C:\Users\PC\Documents\GitHub\nigga-social-network\app\community\[slug]\page.tsx`: modernized (dark theme).
-- `C:\Users\PC\Documents\GitHub\nigga-social-network\app\chat\page.tsx`: modernized (dark theme).
-- `C:\Users\PC\Documents\GitHub\nigga-social-network\app\admin\page.tsx`: modernized (dark theme).
+- `C:\Users\PC\Documents\GitHub\RobinBook-Social-Network\app\page.tsx`: new modern login page (dark, gradient buttons, eye toggle, icons).
+- `C:\Users\PC\Documents\GitHub\RobinBook-Social-Network\app\layout.tsx`: metadata for "Bull Social Network" with gun logo.
+- `C:\Users\PC\Documents\GitHub\RobinBook-Social-Network\lib\db.ts`: points to `u533650113_black` / `Juan159159@`.
+- `C:\Users\PC\Documents\GitHub\RobinBook-Social-Network\app\feed\page.tsx`: modernized (dark theme).
+- `C:\Users\PC\Documents\GitHub\RobinBook-Social-Network\app\profile\page.tsx`: modernized (dark theme).
+- `C:\Users\PC\Documents\GitHub\RobinBook-Social-Network\app\profile\[id]\page.tsx`: modernized (dark theme).
+- `C:\Users\PC\Documents\GitHub\RobinBook-Social-Network\app\community\page.tsx`: modernized (dark theme).
+- `C:\Users\PC\Documents\GitHub\RobinBook-Social-Network\app\community\[slug]\page.tsx`: modernized (dark theme).
+- `C:\Users\PC\Documents\GitHub\RobinBook-Social-Network\app\chat\page.tsx`: modernized (dark theme).
+- `C:\Users\PC\Documents\GitHub\RobinBook-Social-Network\app\admin\page.tsx`: modernized (dark theme).

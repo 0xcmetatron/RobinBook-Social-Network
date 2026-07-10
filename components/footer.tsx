@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import { useEffect, useState } from 'react';
 
@@ -39,7 +39,7 @@ export function Footer() {
     }
   };
 
-  const copyrightText = settings?.copyright_text || '© 2026 Black Social Network. All rights reserved.';
+  const copyrightText = settings?.copyright_text || '� 2026 RobinBook Social Network. All rights reserved.';
   const twitterUrl = settings?.twitter_url || '';
 
   return (

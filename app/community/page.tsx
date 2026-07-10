@@ -83,6 +83,21 @@ export default function CommunityDirectoryPage() {
       </div>
 
       <main className="mx-auto w-full max-w-6xl px-4 py-6">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
+          <div className="hidden sm:block relative w-full sm:w-96">
+            <svg className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#e8e8ed]/30" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+            <input placeholder="Search communities..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className="h-10 w-full rounded-xl bg-[#1e1f2e] pl-10 pr-4 text-sm text-[#e8e8ed] placeholder-[#e8e8ed]/30 border-0 outline-none focus:ring-1 focus:ring-[#4A7AFF] transition-all" />
+          </div>
+          {user && (
+            <button
+              onClick={() => setShowCreate(true)}
+              className="button-gradient h-10 px-6 rounded-xl text-sm font-semibold text-white whitespace-nowrap transition-all hover:scale-[1.02]"
+            >
+              Create Community
+            </button>
+          )}
+        </div>
+
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((community) => (
             <div
